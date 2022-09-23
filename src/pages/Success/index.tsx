@@ -1,5 +1,5 @@
 import { CurrencyDollar, MapPin, Timer } from 'phosphor-react'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 
 import { CartContext } from '../../contexts/CartContext'
 
@@ -7,6 +7,10 @@ import { DeliveryContainer, DeliveryContent, InfoContent } from './styles'
 
 export function Success() {
   const { address } = useContext(CartContext)
+
+  useEffect(() => {
+    document.title = 'Coffee Delivery | Success'
+  }, [])
 
   return (
     <DeliveryContainer>

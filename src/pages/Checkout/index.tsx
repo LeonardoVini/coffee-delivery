@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 
 import {
   Bank,
@@ -77,6 +77,10 @@ export function Checkout() {
     mode: 'onChange',
   })
   const [method, setMethod] = useState('')
+
+  useEffect(() => {
+    document.title = 'Coffee Delivery | Checkout'
+  }, [])
 
   const zipCode: string = watch('zip_code')
 

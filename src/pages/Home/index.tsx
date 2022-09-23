@@ -1,5 +1,5 @@
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { QuantityButton } from '../../components/QuantityButton'
 import { CartContext } from '../../contexts/CartContext'
 
@@ -23,6 +23,10 @@ import {
 
 export function Home() {
   const { coffees, onAddToCart } = useContext(CartContext)
+
+  useEffect(() => {
+    document.title = 'Coffee Delivery | Home'
+  }, [])
 
   function handleAddToCart(coffeeId: number, coffeeName: string) {
     toast.success(`${coffeeName} adicionado ao carrinho!`, {
