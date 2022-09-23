@@ -15,6 +15,9 @@
 
 O principal objetivo desse desafio é ensinar o aluno a utilizar as seguintes ferramentas:
 
+- [x] Componentização
+- [x] Estados
+- [x] Propriedades
 - [x] Navegação com o [React Router Dom](https://reactrouter.com/en/main)
 - [x] Estilização com o [Styled Components](https://styled-components.com/docs)
 - [x] [Figma](https://www.figma.com)
@@ -26,6 +29,7 @@ O principal objetivo desse desafio é ensinar o aluno a utilizar as seguintes fe
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Adicionar o React Toastify
+- [x] Integração com a API da VIA CEP 
 - [ ] Integrar o projeto com o Stripe
 - [ ] Reponsividade
 - [ ] Filtro por tipo de café
