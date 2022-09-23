@@ -54,8 +54,7 @@ export const initialCoffees: Coffee[] = [
   {
     id: 6,
     name: 'Latte',
-    description:
-      'Uma dose de café expresso com o dobro de leite e cremoso',
+    description: 'Uma dose de café expresso com o dobro de leite e cremoso',
     price: 9.9,
     bagdes: ['tradicional', 'com leite'],
     imageURL: 'coffees/latte.png',
