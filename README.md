@@ -5,7 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/LeonardoVini/test-reactjs-coffee-delivery)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/LeonardoVini/test-reactjs-coffee-delivery)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src="coffee_delivery.png" alt="exemplo imagem">
 
 > O Coffee Delivery foi desenvolvido como um dos desafios do curso Ignite ReactJS da @Rocketseat.
 
