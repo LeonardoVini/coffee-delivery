@@ -29,7 +29,11 @@ export function Header() {
           <span>São Paulo, SP</span>
         </Geolocation>
 
-        <CartContent to="/checkout" selectedcoffeesqtd={selectedCoffeesQtd}>
+        <CartContent
+          to="/checkout"
+          title="Ir para o carrinho"
+          selectedcoffeesqtd={selectedCoffeesQtd}
+        >
           <ShoppingCart size={22} weight="fill" />
         </CartContent>
       </CartContainer>

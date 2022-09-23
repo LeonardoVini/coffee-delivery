@@ -3,6 +3,8 @@ import { useContext } from 'react'
 import { QuantityButton } from '../../components/QuantityButton'
 import { CartContext } from '../../contexts/CartContext'
 
+import { toast } from 'react-toastify'
+
 import {
   AdvantageItem,
   AdvantageList,
@@ -22,7 +24,11 @@ import {
 export function Home() {
   const { coffees, onAddToCart } = useContext(CartContext)
 
-  function handleAddToCart(coffeeId: number) {
+  function handleAddToCart(coffeeId: number, coffeeName: string) {
+    toast.success(`${coffeeName} adicionado ao carrinho!`, {
+      toastId: coffeeId,
+    })
+
     onAddToCart(coffeeId)
   }
 
@@ -69,7 +75,7 @@ export function Home() {
           </AdvantageList>
         </BannerContent>
 
-        <img src="/src/assets/banner.png" alt="banner" />
+        <img src="banner.png" alt="banner" />
       </BannerContainer>
 
       <CoffeeContainer>
@@ -110,7 +116,8 @@ export function Home() {
 
                       <button
                         type="button"
-                        onClick={() => handleAddToCart(coffee.id)}
+                        title="Adicionar ao carrinho"
+                        onClick={() => handleAddToCart(coffee.id, coffee.name)}
                       >
                         <ShoppingCart size={22} weight="fill" />
                       </button>

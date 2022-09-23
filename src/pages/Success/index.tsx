@@ -56,7 +56,7 @@ export function Success() {
           </InfoContent>
         </aside>
 
-        <img src="/src/assets/deliveryman.svg" alt="Deliveryman" />
+        <img src="deliveryman.svg" alt="Deliveryman" />
       </DeliveryContent>
     </DeliveryContainer>
   )
